@@ -1,0 +1,136 @@
+body,html{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+body{
+	background-color: rgb(0, 0, 0);
+}
+.blur{
+opacity: 70%;
+}
+
+.slider-container{
+	background: linear-gradient(rgba(5,7,12,0.75),rgba(5,7,12,0.75));
+	display: block;
+	width: 100%;
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	position: relative;
+}
+.slider-content{
+	display: flex;
+	align-items: flex-start;
+	justify-content:initial;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	overflow: hidden;
+	animation: slider 12s infinite;
+}
+.slider-content img{
+	width: 30%;
+	margin-top: 20px;
+}
+.boton{
+	display: flex;
+	justify-content: center;
+}
+.button {
+	padding: 0.4em 2em;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 2.5px;
+	font-weight: 500;
+	background-color:#1cfba2 ;
+	box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+	border-radius: 45px;
+
+	transition: all 0.3s ease 0s;
+	cursor: pointer;
+	outline: none;
+	position:absolute;
+	top: 27rem;
+  }
+  
+  .button:hover {
+	background-color: #23c483;
+	box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+	color: #fff;
+	transform: translateY(-7px);
+  }
+  
+  .button:active {
+	transform: translateY(-1px);
+  }
+  .button a{
+	text-decoration: none;
+	font-family: 'Passion One', cursive;
+	font-size: 1.5rem;
+	color: #fff;
+	text-shadow: 0 0 10px #3399ff,
+	0 0 30px #3399ff,
+	0 0 50px #3399ff
+	;
+  }
+
+.slider-content:nth-child(1){
+	left: 0;
+	animation-delay: -1s;
+	background-image: url(./Img-bagels&co/Coffe-banner.png);
+	background-size: cover;
+	background-position: center;
+}
+.slider-content:nth-child(2){
+	left: 0;
+	animation-delay: 2s;
+	background-image: url(./Img-bagels&co/Tuna-melt-Banner.png);
+	background-size: cover;
+	background-position: center;
+}
+.slider-content:nth-child(3){
+	left: 0;
+	animation-delay: 5s;
+	background-image: url(./Img-bagels&co/Wrap-banner.png);
+	background-size: cover;
+	background-position: center;
+}
+.slider-content:nth-child(4){
+	left: 0;
+	animation-delay: 8s;
+	background-image: url(./Img-bagels&co/Sandwich-Banner.png);
+	background-size: cover;
+	background-position: center;
+}
+@keyframes slider{
+	0%{
+		left: 100%;
+		width: 100%;
+	}
+	5%{
+		left: 0;
+	}
+	25%{
+		left: 0;
+	}
+	30%{
+		left: -100%;
+		width: 100%;
+	}
+	30.0001%{
+		left: -100%;
+		width: 0;
+	}
+	100%{
+		left: 100%;
+		width: 0;
+	}
+}
+@media only screen and ( min-width: 600px){
+	
+}
